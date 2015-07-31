@@ -40,4 +40,13 @@ describe PrimeGrid do
       expect{grid.add_solutions}.to change{grid.rows.length}.from(1).to(11)
     end
   end
+  describe "#add_rows" do
+    before {grid.generate_primes_list}
+    before {grid.add_header}
+    before {grid.add_solutions}
+
+    it "should take the complete rows array and add those arrays to the table." do
+      expect{grid.add_rows}.to change{grid.table.rows.length}.from(0).to(11)
+    end
+  end
 end
