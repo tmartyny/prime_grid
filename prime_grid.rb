@@ -27,6 +27,13 @@ class PrimeGrid
     rows << [""] + prime_list
   end
   def add_solutions
-    
+    index = 0
+    prime_list.each do
+      next_row = []
+      next_row << prime_list[index]
+      next_row += prime_list.map{|prime| prime_list[index] * prime}
+      index += 1
+      rows << next_row
+    end
   end
 end
