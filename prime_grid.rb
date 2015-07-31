@@ -24,6 +24,6 @@ class PrimeGrid
     table.title = "Primes Grid"
   end
   def add_header
-
+    rows << [""] + prime_list
   end
 end
