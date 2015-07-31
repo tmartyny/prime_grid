@@ -14,7 +14,7 @@ describe PrimeGrid do
   end
   describe "#generate_primes_list" do
     it "should generate an array the length of gridsize of prime numbers" do
-      expect(grid.generate_primes_list).to change{grid.prime_list}.from([]).to([2,3,5,7,11,13,17,19,23,29])
+      expect{grid.generate_primes_list}.to change{grid.prime_list}.from([]).to([2,3,5,7,11,13,17,19,23,29])
     end
   end
 end
