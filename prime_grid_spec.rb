@@ -7,4 +7,9 @@ describe PrimeGrid do
       expect(grid.gridsize).to eq(10)
     end
   end
+  describe "#is_prime" do
+    it "should return true if the number is prime" do
+      expect(is_prime?(2).to be true)
+    end
+  end
 end
