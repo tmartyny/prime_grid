@@ -37,5 +37,6 @@ class PrimeGrid
     end
   end
   def add_rows
+    table.rows = rows
   end
 end
