@@ -36,4 +36,6 @@ class PrimeGrid
       rows << next_row
     end
   end
+  def add_rows
+  end
 end
