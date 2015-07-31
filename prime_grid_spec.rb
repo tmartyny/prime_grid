@@ -33,4 +33,11 @@ describe PrimeGrid do
       expect{grid.add_header}.to change{grid.rows}.from([]).to([["",2,3,5,7,11,13,17,19,23,29]])
     end
   end
+  describe "#add_solutions" do
+    before {grid.generate_primes_list}
+    before {grid.add_header}
+    it "should generate the solutions rows and add them to the rows array, making the rows array contain 12 nested arrays including the header and title rows." do
+      expect{grid.add_solutions}.to change{grid.rows.length}.from(2).to(12)
+    end
+  end
 end
