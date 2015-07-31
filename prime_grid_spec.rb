@@ -17,4 +17,9 @@ describe PrimeGrid do
       expect{grid.generate_primes_list}.to change{grid.prime_list}.from([]).to([2,3,5,7,11,13,17,19,23,29])
     end
   end
+  describe "#table" do
+    it "should be an object" do
+      expect(grid.table).to be_instance_of Table
+    end
+  end
 end
