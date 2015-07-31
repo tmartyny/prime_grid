@@ -20,4 +20,6 @@ class PrimeGrid
       @number += 1
     end
   end
+  def add_title
+  end
 end
