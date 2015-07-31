@@ -47,6 +47,7 @@ class PrimeGrid
     add_rows
   end
   def print_table
-    
+    generate_table
+    puts table
   end
 end
