@@ -19,7 +19,7 @@ describe PrimeGrid do
   end
   describe "#table" do
     it "should be an object" do
-      expect(grid.table).to be_instance_of Table
+      expect(grid.table).to be_instance_of Terminal::Table
     end
   end
 end
