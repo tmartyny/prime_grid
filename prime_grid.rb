@@ -12,5 +12,9 @@ class PrimeGrid
   end
 
   def generate_primes_list
+    until prime_list.length == gridsize do
+      prime_list << number if is_prime?(number)
+      @number += 1
+    end
   end
 end
