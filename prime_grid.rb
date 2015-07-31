@@ -21,5 +21,6 @@ class PrimeGrid
     end
   end
   def add_title
+    table.title = "Primes Grid"
   end
 end
