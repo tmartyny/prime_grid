@@ -39,4 +39,11 @@ class PrimeGrid
   def add_rows
     table.rows = rows
   end
+  def generate_table
+    generate_primes_list
+    add_title
+    add_header
+    add_solutions
+    add_rows
+  end
 end
