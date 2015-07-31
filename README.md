@@ -4,12 +4,17 @@ Write a program that prints out a multiplication table of the first 10 prime num
 
 Notes 
 - Consider complexity. How fast does your code run? How does it scale?
+
 It runs in On^2 due to the nested loop to calculate the solutions.
+
 Here are the benchmark tests:
+
 size 10:   0.000000   0.000000   0.000000 (  0.001996)
+
 size 1000000:   0.010000   0.000000   0.010000 (  0.002686)
 
 - Write tests. Try to demonstrate TDD/BDD.
+
 Please see my commit history to see my process of TDD.
 
 
