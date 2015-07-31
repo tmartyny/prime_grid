@@ -37,7 +37,7 @@ describe PrimeGrid do
     before {grid.generate_primes_list}
     before {grid.add_header}
     it "should generate the solutions rows and add them to the rows array, making the rows array contain 11 nested arrays including the header row." do
-      expect{grid.add_solutions}.to change{grid.rows.length}.from(1).to(12)
+      expect{grid.add_solutions}.to change{grid.rows.length}.from(1).to(11)
     end
   end
 end
