@@ -49,4 +49,9 @@ describe PrimeGrid do
       expect{grid.add_rows}.to change{grid.table.rows.length}.from(0).to(11)
     end
   end
+  describe "#print_table" do
+    it "should print the table to STDOUT" do
+      expect{grid.print_table}.to output{table}.to_stdout
+    end
+  end
 end
