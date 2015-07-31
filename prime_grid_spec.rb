@@ -22,4 +22,9 @@ describe PrimeGrid do
       expect(grid.table).to be_instance_of Terminal::Table
     end
   end
+  describe "#add_title" do
+    it "should add a title to the table" do
+      expect{grid.add_title}.to change{grid.table.title}.from(nil).to("Primes Grid")
+    end
+  end
 end
