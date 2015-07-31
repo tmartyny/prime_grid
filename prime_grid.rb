@@ -51,3 +51,10 @@ class PrimeGrid
     puts table
   end
 end
+
+# if ARGV.first.to_i > 0
+#   grid = PrimeGrid.new(gridsize: ARGV.first.to_i)
+#   grid.print_table
+# else
+#   raise ArgumentError, "#{ARGV.first} is not a valid grid dimention. Try again with a positive integer."
+# end
