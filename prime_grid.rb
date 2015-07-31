@@ -1,14 +1,17 @@
 require_relative 'prime_assessment'
+require 'terminal-table'
 
 class PrimeGrid
   include PrimeAssessment
   
-  attr_reader :gridsize, :prime_list, :number
+  attr_reader :gridsize, :prime_list, :number, :table
 
   def initialize(args)
     @gridsize = args.fetch(:gridsize)
     @prime_list = []
     @number = 2
+    @table = Terminal::Table.new
+
   end
 
   def generate_primes_list
