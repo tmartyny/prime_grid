@@ -27,4 +27,9 @@ describe PrimeGrid do
       expect{grid.add_title}.to change{grid.table.title}.from(nil).to("Primes Grid")
     end
   end
+  describe "#add_header" do
+    it "should add the prime_list to the table as the first row" do
+      expect{grid.add_header}.to change{grid.rows}.from([]).to([[2,3,5,7,11,13,17,19,23,29]])
+    end
+  end
 end
