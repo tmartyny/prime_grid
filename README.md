@@ -22,4 +22,3 @@ Please see my commit history to see my process of TDD.
 
 `ruby prime_grid.rb 10`
 
--To see my process of TDD, please see my commit history.
