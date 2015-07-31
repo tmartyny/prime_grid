@@ -8,4 +8,7 @@ class PrimeGrid
   def initialize(args)
     @gridsize = args.fetch(:gridsize)
   end
+
+  def generate_primes_list
+  end
 end
