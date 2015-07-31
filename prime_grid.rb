@@ -26,4 +26,7 @@ class PrimeGrid
   def add_header
     rows << [""] + prime_list
   end
+  def add_solutions
+    
+  end
 end
